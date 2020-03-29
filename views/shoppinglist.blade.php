@@ -74,7 +74,7 @@
 			</a>
 			@endif
 		</h1>
-		<p data-status-filter="belowminstockamount" class="btn btn-lg btn-info status-filter-button responsive-button">{{ $__n(count($missingProducts), '%s product is below defined min. stock amount', '%s products are below defined min. stock amount') }}</p>
+		<p data-status-filter="belowminstockamount" class="btn btn-lg btn-info status-filter-button responsive-button">{{ $__n(count($missingProducts), '%s product is <= defined min. stock amount', '%s products are <= defined min. stock amount') }}</p>
 	</div>
 </div>
 
@@ -87,7 +87,7 @@
 		<label for="status-filter">{{ $__t('Filter by status') }}</label> <i class="fas fa-filter"></i>
 		<select class="form-control" id="status-filter">
 			<option class="bg-white" value="all">{{ $__t('All') }}</option>
-			<option class="bg-info" value="belowminstockamount">{{ $__t('Below min. stock amount') }}</option>
+			<option class="bg-info" value="belowminstockamount">{{ $__t('<= stock amount') }}</option>
 			<option class="bg-white" value="xxUNDONExx">{{ $__t('Only undone items') }}</option>
 		</select>
 	</div>

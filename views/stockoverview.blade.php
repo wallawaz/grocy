@@ -70,7 +70,7 @@
 			<option class="bg-warning" value="expiring">{{ $__t('Expiring soon') }}</option>
 			<option class="bg-danger" value="expired">{{ $__t('Already expired') }}</option>
 			@endif
-			<option class="bg-info" value="belowminstockamount">{{ $__t('Below min. stock amount') }}</option>
+			<option class="bg-info" value="belowminstockamount">{{ $__t('<= min. stock amount') }}</option>
 		</select>
 	</div>
 </div>

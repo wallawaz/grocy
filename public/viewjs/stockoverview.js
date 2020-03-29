@@ -186,7 +186,7 @@ function RefreshStatistics()
 		{
 			$("#info-expiring-products").text(__n(result.expiring_products.length, '%s product expires', '%s products expiring') + ' ' + __n(nextXDays, 'within the next day', 'within the next %s days'));
 			$("#info-expired-products").text(__n(result.expired_products.length, '%s product is already expired', '%s products are already expired'));
-			$("#info-missing-products").text(__n(result.missing_products.length, '%s product is below defined min. stock amount', '%s products are below defined min. stock amount'));
+			$("#info-missing-products").text(__n(result.missing_products.length, '%s product is <= defined min. stock amount', '%s products are <= defined min. stock amount'));
 		},
 		function(xhr)
 		{
